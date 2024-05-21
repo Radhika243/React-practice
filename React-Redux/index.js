@@ -1,6 +1,7 @@
 // console.log("Index.js")
 const redux = require('redux');
 const reduxLogger = require('redux-logger');
+const {configureStore} = require('@reduxjs/toolkit')
 const createStore = redux.createStore
 const logger = reduxLogger.createLogger()
 const BUY_CAKE = "BUY_CAKE";
