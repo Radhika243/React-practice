@@ -1,6 +1,6 @@
 const redux = require('redux');
 const axios = require('axios');
-const thunk = require('redux-thunk')
+const {thunk} = require('redux-thunk')
 // import redux from 'redux';
 // import axios from 'axios';
 // import thunk from 'redux-thunk';
