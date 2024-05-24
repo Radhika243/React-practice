@@ -7,7 +7,7 @@ const initialUserState = {
     error:''
 }
 
-//generates pending , fulfilled and rejected action types
+//generates pending , fulfilled and rejected action types, 2nd parameter returns promise
 export const fetchUsers = createAsyncThunk('user/fetchUsers',()=>{
     return axios.get('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.data.map((user)=>user.id))
